@@ -1,0 +1,202 @@
+.products{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+.card{
+    flex-basis: 255px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.card-hover{
+    position: absolute;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 52px;
+    right: 10px;
+    transform: translateX(10px);
+    width: 234px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.53);
+    opacity: 0;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+}
+
+.card-hover__item{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+.card-hover__btn{
+    position: relative;
+    border: 1px solid $white-color;
+    width: 50px;
+    height: 50px;
+    background-color: $color-for-hover;
+    margin-right: 8px;
+    margin-top: 78px;
+    cursor: pointer;
+}
+.card-hover:hover,
+.card-hover:focus {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card:hover,
+.card-hover__btn{
+  opacity: 1;
+}
+.card-hover__btn:hover,
+.card-hover__btn:focus {
+  background-color: $accent-color;
+  transition-duration: 250ms;
+}
+.card:hover .card-hover {
+    transform: translateY(0);
+  }
+.card:hover .card__name {
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.card:hover .card__price {
+    background-color: $secondarry-accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.card:focus .card__name {
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.card:focus .card__price {
+    background-color: $secondarry-accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    fill: $white-color;
+  }
+  .card-icon__add {
+    margin-left: 10px;
+  }
+/*.card-hover__btn::before {
+  content: "";
+  display: block;
+  height: 52px;
+  min-width: 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-3%);
+}
+
+.card-hover__btn--like::before {
+    background-image: url(../images/like.png);
+  }
+.card-hover__btn--share::before {
+    background-image: url(../images/share.png);
+  }
+.card-hover__btn--clock::before {
+    background-image: url(../images/clock.png);
+  }
+.card-hover__btn--add::before {
+    background-image: url(../images/add.png);
+    background-position: left;
+    transform: translateX(8px);
+  }*/
+.card-hover__btn--add {
+    position: relative;
+    background-color: $color-for-hover;
+    width: 164px;
+    top: -68px;
+  }
+.card-hover__text {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background-position: center;
+    top: 20px;
+    left: 50px;
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: $font, sans-serif;
+  }
+.card-link{
+    width: 255px;
+    display: flex;
+    text-decoration: none;
+    transition-duration: 10000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.card__price{
+    text-align: center;
+  display: inline-block;
+  width: 55px;
+  background-color: $bg-for-card;
+}
+.card__name{
+    display: block;
+  padding-left: 12px;
+  background-color: $color-for-hover;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 200px;
+  height: 18px;
+}
+.card__name,
+.card__price{
+  padding-top: 12px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: $font, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: $white-color;
+}
+
+
+
+.card:hover .card__name {
+    background-color: $accent-color;
+}
+.card:hover .card__price {
+    background-color: $secondarry-accent-color;
+}
+  
+.card-link:focus .card__name {
+    background-color: $accent-color;
+}
+.card-link:focus .card__price {
+    background-color: $secondarry-accent-color;
+}

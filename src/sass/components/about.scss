@@ -1,0 +1,65 @@
+
+.about{
+    padding-top: 95px;
+    padding-bottom: 85px;
+}
+.about-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.about-list__item{
+    width: 255px;
+    align-items: center;
+    
+    
+}
+.about-list__icon{
+    display: block;
+  width: 60px;
+  height: 60px;
+  fill: $accent-color;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 54px;
+}
+/*
+.about-list__item::before{
+  content: "";
+  display: block;
+  height: 68px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.about-list__item--setting::before{
+    background-image: url(../images/icon1.png);
+}
+.about-list__item--money::before{
+    background-image: url(../images/icon2.png);
+}
+.about-list__item--global::before{
+    background-image: url(../images/icon3.png);
+}
+.about-list__item--compass::before{
+    background-image: url(../images/icon4.png);
+}*/
+
+.about-list__title{
+    font-family: $font, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.about-list__text{
+    font-family: $font, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: $text-color;
+    text-align: center;
+
+}

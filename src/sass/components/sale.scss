@@ -1,0 +1,60 @@
+.sale_bg{
+    background-image: url(../images/bg1.png);
+    max-width: 1600px;
+    height: 600px;
+    
+}
+    @media screen and (min-resolution: 2dppx) {
+    .sale_bg {
+      background-image: url(../images/bg1@2x.png);
+    }
+  }
+
+.sale-title{
+    color: $white-color;
+    text-align: center;
+    font-size: 48px;
+    margin: 0 auto;
+    padding-top: 205px;
+    text-transform: uppercase;
+}
+
+.sale-title__l1{
+    font-family: $font, sans-serif;
+    font-weight: 300;
+
+}
+.sale-title__symbol{
+    font-weight: 700;
+    color: $accent-color;
+}
+.sale-title__l2{
+    font-family: $font, sans-serif;
+    font-weight: 400;
+}
+
+.sale-title__l3{
+    font-family: $font, sans-serif;
+    font-weight: 900;
+    color: $accent-color;
+}
+
+.sale-link__inner{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+.sale-link{
+    font-family: $font, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white-color;
+    padding: 15px 30px;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    display: block;
+    
+}
